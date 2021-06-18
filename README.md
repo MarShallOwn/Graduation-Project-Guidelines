@@ -214,10 +214,6 @@ Not Prefered `var` :x:
 var username = "MarShallOwn";
 ```
 
-**Ruby**
-
-We should ensure that there is strict adherence to [this style guide](https://docs.google.com/document/d/1V1YFusbUsG8rBd-XcS9gc31xI45s4DMQIrheMIeRqb8/edit#heading=h.oq7iz97r9dfi).
-
 **PHP**
 
 We should ensure that there is strict adherence to the [PSR-2 Coding Style Guide](http://www.php-fig.org/psr/psr-2/).
