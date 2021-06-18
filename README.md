@@ -2,6 +2,13 @@
 
 Writing readable code is an art and following style guides is one way of ensuring our code is always clean, readable and consistent. Language specific style guides exist but general coding standards apply to all programming languages. These are not to be blindly followed; This Guideline will be updated frequently so keep an eye on it and strive to understand these and ask when in doubt.
 
+**General**
+
+our code should contain
+- Flexibility
+- Scalability
+- Usability
+- should be Loosely Coupled
 
 **Naming**
 - Use `PascalCase` for classes, `lowerCamelCase` for variables and functions, `SCREAMING_SNAKE_CASE` for constants, `_singleLeadingUnderscore` for private variables and functions.
@@ -39,13 +46,29 @@ for(const name of names){
 - Name variables, methods, and classes to reveal intent. Intent describes the function of the class, method or variable. A typical example is if we were describing a class method to sort a collection by a certain parameter. It’s preferred to define this as `obj.sort_by(param)`. It makes code more readable and require less documentation.
 
 **Formatting**
-- Avoid inline comments.
-- Avoid deep indentation.
 - Break long lines after 80 characters.
 - Delete trailing whitespace.
+
+For Example
+```
+It is extra spaces (and tabs) at the end of line      
+                                                 ^^^^^ here
+```
 - Don't include spaces after `(`, `[` or before `]`, `)`.
+
+Prefered Way :heavy_check_mark:
+```
+// Example using Javascript
+
+const array = [1, 2, 3, 4, 5];
+```
+Not Prefered Way :x:
+```
+// Example using Javascript
+
+const array = [ 1, 2, 3, 4, 5 ];
+```
 - Don't misspell.
-- Don't vertically align tokens on consecutive lines.
 - Do not leave commented out code within production code.
 - If you break up an argument list, keep the arguments on their own lines and closing parenthesis on its own line. [Example 1](https://github.com/andela/code-review-guidelines/tree/master/style/ruby/sample.rb#L2), [Example 2](https://github.com/andela/code-review-guidelines/tree/master/style/ruby/sample.rb#L10).
 - If you break up a hash/dictionary/associative array, keep the elements on their own lines and closing curly brace on its own line.
